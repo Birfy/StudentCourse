@@ -18,13 +18,13 @@ public class Department {
     @Column(name = "name")
     private String name;
 
-    @OneToMany
+    @OneToMany(mappedBy = "department")
     private Set<Student> students;
 
-    @OneToMany
+    @OneToMany(mappedBy = "department")
     private Set<Teacher> teachers;
 
-    @OneToMany
+    @OneToMany(mappedBy = "department")
     private Set<Course> courses;
 
 }

@@ -32,5 +32,11 @@ public class Course {
     @OneToMany(mappedBy = "course")
     Set<StudentCourseRelationship> relationships;
 
-
+//    @ManyToMany
+//    @JoinTable(
+//            name = "time_slots",
+//            joinColumns = @JoinColumn(name = "student_id"),
+//            inverseJoinColumns = @JoinColumn(name = "course_id")
+//    )
+//    Set<TimeSlot> timeslots;
 }
